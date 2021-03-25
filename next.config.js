@@ -7,9 +7,6 @@ module.exports = {
     webpack: function (config, options) {
         console.log(options.webpack.version);
         config.experiments = {};
-        // config.node = {
-        //     fs: 'empty'
-        // };
         return config;
     }
 }
