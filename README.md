@@ -69,7 +69,21 @@ npm i fsevents@latest -f --save-optional
 
 //install core-ui components (based on bootstrap 4.6/5.0):
 
-npm i @coreui/coreui @coreui/react
+npm i @coreui/coreui 
+
+
+instead of @coreui/react
+it uses:
+
+coreui-nextjs-3.4.6.tgz
+
+https://github.com/igal-abachi-dev/coreui-next10
+
+coreui-icons-nextjs-1.1.0.tgz 
+
+https://github.com/igal-abachi-dev/coreui-icons-next10
+
+
 
 
 ///
