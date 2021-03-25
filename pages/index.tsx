@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 
 import {
-    CButton,
+    CLink,
 } from '@coreui/nextjs';
 
 import styles from '../styles/Home.module.scss';
@@ -18,11 +18,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <CButton
-          color="info"
-          size="sm"
-          className="m-2"
-        />
+        <CLink
+          to="/about"
+        >press</CLink>
         <h1 className={styles.title}>
           Welcome to
           {' '}
