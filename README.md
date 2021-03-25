@@ -1,5 +1,85 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+like this:
+```
+npx create-next-app next10-coreui-test
+
+cd next10-coreui-test
+
+npm install sass
+
+(
+echo "const path = require('path')"
+echo "module.exports = {"
+echo "  sassOptions: {    includePaths: [path.join(__dirname, 'styles')],  },"
+echo "}"
+)>"next.config.js"
+
+
+type nul > "tsconfig.json"
+
+npm run dev
+
+npm install --save-dev typescript @types/react @types/node @types/react-dom @types/prop-types
+
+npm run dev
+
+//change js to .tsx files
+//change css to .module.scss files
+//remove api folder
+//
+//in package.json: enable export: 
+//"build": "next build && next export"
+
+
+//setup linting
+
+npm i -D babel-eslint eslint-config-airbnb eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
+ 
+  npx eslint --init
+ 
+  npm install --save-dev stylelint stylelint-scss stylelint-config-standard @wordpress/stylelint-config --save-dev
+ 
+ //in package.json
+    "lint": "eslint --ext '.ts,.jsx,.tsx' ./**/*.{ts,jsx,tsx} --quiet --fix",
+    "lint-scss": "npx stylelint ./**/*.scss --fix"
+
+// see .eslintrc.js file , for settings
+
+///////////////////
+ 
+
+enable webpack 5:
+const path = require('path')
+module.exports = {
+    sassOptions: {includePaths: [path.join(__dirname, 'styles')],},
+    future: {
+        webpack5: true
+    },
+    webpack: function (config, options) {
+        console.log(options.webpack.version);
+        config.experiments = {};
+        // config.node = {
+        //     fs: 'empty'
+        // };
+        return config;
+    }
+}
+
+```
+
+install core-ui components (based on bootstrap 4.6/5.0):
+npm i @coreui/coreui @coreui/react
+
+
+///
+later you can install more packages...:
+
+npm i axios swr
+
+npm i next-pwa
+
+
 ## Getting Started
 
 First, run the development server:
