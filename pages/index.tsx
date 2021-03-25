@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import { useState } from 'react';
 
+
 import {
-  CButton,
-} from '@coreui/react';
+    CButton,
+} from '@coreui/nextjs';
+
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
