@@ -59,15 +59,12 @@ module.exports = {
     webpack: function (config, options) {
         console.log(options.webpack.version);
         config.experiments = {};
-        // config.node = {
-        //     fs: 'empty'
-        // };
         return config;
     }
 }
 
 ```
-npm i fs-extra web-vitals
+npm i fsevents@latest -f --save-optional
 
 
 //install core-ui components (based on bootstrap 4.6/5.0):
