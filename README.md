@@ -32,7 +32,7 @@ npm run dev
 //"build": "next build && next export"
 
 
-//setup linting
+//setup linting:
 
 npm i -D babel-eslint eslint-config-airbnb eslint eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
  
@@ -68,7 +68,8 @@ module.exports = {
 
 ```
 
-install core-ui components (based on bootstrap 4.6/5.0):
+//install core-ui components (based on bootstrap 4.6/5.0):
+
 npm i @coreui/coreui @coreui/react
 
 
