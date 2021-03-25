@@ -67,6 +67,8 @@ module.exports = {
 }
 
 ```
+npm i fs-extra web-vitals
+
 
 //install core-ui components (based on bootstrap 4.6/5.0):
 
