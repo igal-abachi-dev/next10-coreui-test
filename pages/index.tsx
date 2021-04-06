@@ -27,17 +27,12 @@ import styles from '../styles/Home.module.scss';
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const routes = [
-        {path: '/', exact: true, name: 'Home'},
-        {path: '/about', name: 'About'}
-    ];
 
     return (
         <div className={'c-app  c-default-layout'}>
 
             <CBreadcrumbRouter
                 className="border-0 c-subheader-nav m-0 px-0 px-md-3"
-                routes={routes}
             />
             {/* <CSidebar/>*/}
 
@@ -60,12 +55,12 @@ export default function Home() {
                                                 <div className="card-header-actions">
                                                     <CLink
                                                         name="about"
-                                                        to={'/about'}
+                                                        to={'/about/1/post'}
                                                         rel="noreferrer noopener"
                                                         target="_blank"
                                                         className="card-header-action"
                                                     >
-                                                        <small >{'about'}</small>
+                                                        <small >{'post 1'}</small>
                                                     </CLink>
 
                                                     <CLink
