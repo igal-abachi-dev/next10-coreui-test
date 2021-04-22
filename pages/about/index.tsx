@@ -1,7 +1,6 @@
 import Head from "next/head";
 import {CBreadcrumbRouter, CButton} from "@coreui/nextjs";
 import styles from '../../styles/Home.module.scss';
-import {routes} from '../_routes';
 
 export default function About() {
     return (
